@@ -30,9 +30,11 @@ int main() {
 }
 
 double sin_n(double x, int N) {
+	double sinx = sin(x);
 	double res = x;
 	double fact = 1;
-	for (int i = 3, sign = -1; i <= N; i+=2)
+	printf("|%*c%4s%*c|%*c%12s%*c|%*c%12s%*c|\n\n", 2, ' ', "N", 2, ' ', 2, ' ', "sin_N", 2, ' ', 2, ' ', "отклонение", 2, ' ');
+	for (int i = 3, sign = -1, count = 1; i <= N; i+=2, count++)
 	{
 		fact = 1;
 		for (int j = 1; j <= i; j++)
@@ -40,6 +42,7 @@ double sin_n(double x, int N) {
 	
 		res += sign * pow(x, i) / fact;
 		sign *= -1;
+		printf("|%*c%4d%*c|%*c%12lf%*c|%*c%12lf%*c|\n", 2, ' ', count, 2, ' ', 2, ' ', res, 2, ' ', 2, ' ', res - sinx, 2, ' ');
 		
 	}
 	return res;

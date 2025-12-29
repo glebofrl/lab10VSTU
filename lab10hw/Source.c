@@ -57,6 +57,7 @@ int main()
 			break;
 		}
 		printf("\n");
+		while (getchar() != '\n');
 	} while (1);
 
 }

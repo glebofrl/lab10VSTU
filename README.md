@@ -20,10 +20,12 @@
 
 
 ### Блок-схема
-![Блок-схема алгоритма]
-(scheme1.png)
-(scheme2.png)
-(scheme3.png)
+main()
+![Блок-схема алгоритма](scheme1.png)
+area_triangle(float a)
+![Блок-схема алгоритма](scheme2.png)
+draw_triangle_stars(int a)
+![Блок-схема алгоритма](scheme3.png)
 [https://github.com/glebofrl/lab6VSU/blob/master/scheme.png](https://github.com/glebofrl/lab10VSTU/blob/master/scheme1.png)
 [https://github.com/glebofrl/lab6VSU/blob/master/scheme.png](https://github.com/glebofrl/lab10VSTU/blob/master/scheme2.png)
 [https://github.com/glebofrl/lab6VSU/blob/master/scheme.png](https://github.com/glebofrl/lab10VSTU/blob/master/scheme3.png)
